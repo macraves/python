@@ -12,13 +12,13 @@ def save_file(prompt):
 
 def read_file():
     '''Reads text file contents'''
-    with open(FILENAME, 'r') as file_in:
+    with open(FILENAME, 'r', encoding='UTF-8') as file_in:
         contents = file_in.read()
     print(contents)
 
 
 def change_directory():
-
+    '''Main flow of how to change directory'''
     current_dir = os.getcwd()
     print('\nCurrent Root Directory of your environment')
     save_file('Main directory')
